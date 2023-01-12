@@ -10,8 +10,8 @@
     <license type="file">LICENSE.txt</license>
     <icon>images/logo.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>-.-</description>
-    <releaseNotes>PackML State Diagram control for TwinCAT HMI</releaseNotes>
+    <description>PackML State Diagram control for TwinCAT HMI</description>
+    <releaseNotes>First release</releaseNotes>
     <copyright>Copyright 2023</copyright>
     <tags>TwinCAT HMI ProductVersion_1.12.758.8</tags>
     <dependencies>
