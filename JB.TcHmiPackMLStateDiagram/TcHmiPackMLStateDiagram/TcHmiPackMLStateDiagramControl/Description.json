@@ -1,0 +1,333 @@
+﻿{
+    "$schema": "../.hmiframework/Schema/ControlDescription.Schema.json",
+    "apiVersion": 1,
+    "name": "TcHmiPackMLStateDiagramControl",
+    "namespace": "TcHmi.Controls.TcHmiPackMLStateDiagram",
+    "displayName": "TcHmiPackMLStateDiagram",
+    "version": {
+        "full": "1.0.0.0",
+        "major": 1,
+        "minor": 0,
+        "revision": 0,
+        "build": 0
+    },
+    "visible": true,
+    "themeable": "Standard",
+    "base": "TcHmi.Controls.System.TcHmiControl",
+    "description": "PackML State Diagram control made for TwinCAT HMI.",
+    "properties": {
+        "containerControl": false,
+        "geometry": {
+            "width": 750,
+            "height": 500
+        }
+    },
+    "template": "Template.html",
+    "icons": [
+        {
+            "name": "Icons/16x16.png",
+            "width": 16,
+            "height": 16
+        },
+        {
+            "name": "Icons/24x24.png",
+            "width": 24,
+            "height": 24
+        },
+        {
+            "name": "Icons/32x32.png",
+            "width": 32,
+            "height": 32
+        },
+        {
+            "name": "Icons/64x64.png",
+            "width": 64,
+            "height": 64
+        }
+    ],
+    "dependencyFiles": [
+        {
+            "name": "TcHmiPackMLStateDiagramControl.js",
+            "type": "JavaScript",
+            "description": "Contains all the main logic."
+        },
+        {
+            "name": "Style.css",
+            "type": "Stylesheet",
+            "description": "Theme independent style"
+        }
+    ],
+    "themes": {
+        "Base": {
+            "resources": [
+                {
+                    "name": "Themes/Base/Style.css",
+                    "type": "Stylesheet",
+                    "description": "Theme dependent style"
+                }
+            ]
+        },
+        "Base-Dark": {
+            "resources": [
+                {
+                    "name": "Themes/Base-Dark/Style.css",
+                    "type": "Stylesheet",
+                    "description": "Theme dependent style"
+                }
+            ]
+        }
+    },
+    "attributes": [
+        {
+            "name": "data-tchmi-packml-outerlayer-color",
+            "propertyName": "OuterLayerColor",
+            "propertySetterName": "setOuterLayerColor",
+            "propertyGetterName": "getOuterLayerColor",
+            "displayName": "OuterLayerColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the outer layer.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(62, 71, 86, 1)",
+            "defaultValueInternal": "rgba(62, 71, 86, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-innerlayer-color",
+            "propertyName": "InnerLayerColor",
+            "propertySetterName": "setInnerLayerColor",
+            "propertyGetterName": "getInnerLayerColor",
+            "displayName": "InnerLayerColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the inner layer.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(162, 172, 189, 1)",
+            "defaultValueInternal": "rgba(162, 172, 189, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-state-execute-color",
+            "propertyName": "StateExecuteColor",
+            "propertySetterName": "setStateExecuteColor",
+            "propertyGetterName": "getStateExecuteColor",
+            "displayName": "StateExecuteColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the Execute state.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(29, 71, 160, 1)",
+            "defaultValueInternal": "rgba(29, 71, 160, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-state-waiting-color",
+            "propertyName": "StateWaitingColor",
+            "propertySetterName": "setStateWaitingColor",
+            "propertyGetterName": "getStateWaitingColor",
+            "displayName": "StateWaitingColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the Waiting states.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(255, 217, 4, 1)",
+            "defaultValueInternal": "rgba(255, 217, 4, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-state-acting-color",
+            "propertyName": "StateActingColor",
+            "propertySetterName": "setStateActingColor",
+            "propertyGetterName": "getStateActingColor",
+            "displayName": "StateActingColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the Acting states.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(71, 159, 144, 1)",
+            "defaultValueInternal": "rgba(71, 159, 144, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-state-execute-text-color",
+            "propertyName": "StateExecuteTextColor",
+            "propertySetterName": "setStateExecuteTextColor",
+            "propertyGetterName": "getStateExecuteTextColor",
+            "displayName": "StateExecuteTextColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the Execute state text.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(248, 248, 255, 1)",
+            "defaultValueInternal": "rgba(248, 248, 255, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-state-waiting-text-color",
+            "propertyName": "StateWaitingTextColor",
+            "propertySetterName": "setStateWaitingTextColor",
+            "propertyGetterName": "getStateWaitingTextColor",
+            "displayName": "StateWaitingTextColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the Waiting states text.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(72, 51, 0, 1)",
+            "defaultValueInternal": "rgba(72, 51, 0, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-state-acting-text-color",
+            "propertyName": "StateActingTextColor",
+            "propertySetterName": "setStateActingTextColor",
+            "propertyGetterName": "getStateActingTextColor",
+            "displayName": "StateActingTextColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the Acting states text.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(0, 47, 37, 1)",
+            "defaultValueInternal": "rgba(0, 47, 37, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-state-arrow-color",
+            "propertyName": "ArrowColor",
+            "propertySetterName": "setArrowColor",
+            "propertyGetterName": "getArrowColor",
+            "displayName": "ArrowColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of the arrow transitions.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(206, 216, 234, 1)",
+            "defaultValueInternal": "rgba(206, 216, 234, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-state-active-color",
+            "propertyName": "ActiveBorderColor",
+            "propertySetterName": "setActiveBorderColor",
+            "propertyGetterName": "getActiveBorderColor",
+            "displayName": "ActiveBorderColor",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:framework#/definitions/SolidColor",
+            "category": "Colors",
+            "description": "The color of border when the state is active.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": "rgba(0, 240, 0, 1)",
+            "defaultValueInternal": "rgba(0, 240, 0, 1)"
+        },
+        {
+            "name": "data-tchmi-packml-unitmodecurrent",
+            "propertyName": "UnitModeCurrent",
+            "propertySetterName": "setUnitModeCurrent",
+            "propertyGetterName": "getUnitModeCurrent",
+            "displayName": "UnitModeCurrent",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:general#/definitions/DINT",
+            "category": "PackML",
+            "description": "UnitModeCurrent from ST_PMLs.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": null
+        },
+        {
+            "name": "data-tchmi-packml-statecurrent",
+            "propertyName": "StateCurrent",
+            "propertySetterName": "setStateCurrent",
+            "propertyGetterName": "getStateCurrent",
+            "displayName": "StateCurrent",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:general#/definitions/DINT",
+            "category": "PackML",
+            "description": "StateCurrent from ST_PMLs.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": null,
+            "defaultValueInternal": null
+        },
+        {
+            "name": "data-tchmi-packml-activeanimation",
+            "propertyName": "ActiveStateAnimation",
+            "propertySetterName": "setActiveStateAnimation",
+            "propertyGetterName": "getActiveStateAnimation",
+            "displayName": "ActiveStateAnimation",
+            "visible": true,
+            "themeable": "Standard",
+            "displayPriority": 10,
+            "type": "tchmi:general#/definitions/Boolean",
+            "category": "Animation",
+            "description": "Animation for the active state.",
+            "readOnly": false,
+            "bindable": true,
+            "heritable": true,
+            "defaultValue": false,
+            "defaultValueInternal": false
+        }
+    ],
+    "attributeCategories": [
+        {
+            "name": "PackML",
+            "displayPriority": 10
+        },
+        {
+            "name": "Animation",
+            "displayPriority": 11
+        }
+    ],
+    "functions": [],
+    "events": [],
+    "dataTypes": [
+        {
+            "schema": "Schema/Types.Schema.json"
+        }
+    ]
+}

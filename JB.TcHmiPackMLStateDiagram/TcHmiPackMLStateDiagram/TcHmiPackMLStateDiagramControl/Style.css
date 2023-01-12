@@ -1,0 +1,126 @@
+﻿/* General theme independed control css. */
+
+.TcHmi_Controls_TcHmiPackMLStateDiagram_TcHmiPackMLStateDiagramControl {
+    overflow: hidden;
+}
+
+.TcHmi_Controls_TcHmiPackMLStateDiagram_TcHmiPackMLStateDiagramControl-Template {
+    width: 100%;
+    height: 100%;
+}
+
+/* Layers */
+.packml-base-main {
+    width: 100%;
+    height: 100%;
+}
+
+.packml-outer-layer {
+    fill: #3e4756;
+}
+
+.packml-inner-layer {
+    fill: #a2acbd;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+/* States */
+.state-waiting {
+    fill: #ffd904;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+.state-acting {
+    fill: #479f90;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+.state-execute {
+    fill: #1d47a0;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+.normal-state {
+    stroke-width: 0.5px;
+    stroke: rgba(240, 240, 240, 0.3);
+}
+
+.active-state {
+    stroke-width: 1px;
+    stroke: rgba(0, 240, 0, 1);
+}
+
+.active-state-animation {
+    animation: active 1.5s linear infinite;
+}
+
+
+/* Texts */
+.state-text-waiting {
+    fill: #483300;
+}
+
+.state-text-acting {
+    fill: #002f25;
+}
+
+.state-text-execute {
+    fill: #f8f8ff;
+}
+
+/* Arrows */
+.state-arrow-transition {
+    fill: #ced8ea;
+    stroke: #ced8ea;
+}
+
+
+/* Animations */
+@keyframes active {
+    0% {
+        stroke-opacity: 1;
+    }
+    25% {
+        stroke-opacity: 0.75;
+    }
+    50% {
+        stroke-opacity: 0.5;
+    }
+    75% {
+        stroke-opacity: 0.75;
+    }
+    100% {
+        stroke-opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* If the main use for this control is interaction
+    uncomment the following lines to give user feedback:
+    This overlays the whole control with a white color
+    and changes the mouse cursor */
+
+/*
+.TcHmi_Controls_$default_namespace$_TcHmiPackMLStateDiagram.TcHmi_Controls_System_TcHmiControl-operate-disallowed::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    cursor: not-allowed;
+}
+*/

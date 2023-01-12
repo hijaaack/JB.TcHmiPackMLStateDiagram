@@ -1,0 +1,24 @@
+﻿{
+  "modules": [
+    {
+      "type": "Package",
+      "nugetId": "Beckhoff.TwinCAT.HMI.Framework"
+    },
+    {
+      "type": "Control",
+      "basePath": "TcHmiPackMLStateDiagramControl/",
+      "descriptionFile": "Description.json",
+      "toolboxCategory": "TcHmiPackMLStateDiagram:1632"
+    }
+  ],
+  "provideMetadata": {
+    "toolbox": {
+      "TcHmiPackMLStateDiagram": {
+        "200": "TcHmiPackMLStateDiagram",
+        "1632": "JB: Controls"
+      }
+    }
+  },
+  "$schema": ".hmiframework/Schema/Manifest.Schema.json",
+  "apiVersion": 1
+}

@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "definitions": {
+    "TcHmi.Controls.TcHmiPackMLStateDiagram.TcHmiPackMLStateDiagramControl": {
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiPackMLStateDiagramControl",
+      "frameworkControlNamespace": "TcHmi.Controls.TcHmiPackMLStateDiagram"
+    }
+  }
+}

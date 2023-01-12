@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>JB.TcHmiPackMLStateDiagram</id>
+    <version>1.0.0</version>
+    <title>JB.TcHmiPackMLStateDiagram</title>
+    <authors>Jack Borelius</authors>
+    <owners>Jack Borelius</owners>
+    <projectUrl>https://github.com/hijaaack/JB.TcHmiPackMLStateDiagram</projectUrl>
+    <license type="file">LICENSE.txt</license>
+    <icon>images/logo.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>-.-</description>
+    <releaseNotes>PackML State Diagram control for TwinCAT HMI</releaseNotes>
+    <copyright>Copyright 2023</copyright>
+    <tags>TwinCAT HMI ProductVersion_1.12.758.8</tags>
+    <dependencies>
+      <group targetFramework="native1.12-tchmi">
+        <dependency id="Beckhoff.TwinCAT.HMI.Framework" version="12.758.8" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="LICENSE.txt" target="" />
+    <file src="**\*" target="runtimes\native1.12-tchmi\" exclude=".eslintrc.json;**\*.nuspec;**\*.tpl.json;**\*.hmi*proj;**\~*;**\*.tmp;**\tmp*;**\*.user;**\tsconfig.json;**\*.log;**\*.bak;**\obj\**\*;packages.config;packages.xsd;.hmiframework\**\*;.hmipkgs\**\*;.git;.gitignore;.gitattributes" />
+    <file src="images\logo.png" target="images\" />
+  </files>
+</package>
