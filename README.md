@@ -12,7 +12,7 @@ other than the author(s) and, since we are critically thinking human beings, the
 always subject to change, revision, and rethinking at any time. Please do not hold us to them
 in perpetuity.
 
-# JB.TcHmiPackMLStateDiagram for TwinCAT HMI
+## JB.TcHmiPackMLStateDiagram for TwinCAT HMI
 
 ![enter image description here](https://user-images.githubusercontent.com/75740551/212083574-a0f7f5cb-2941-45bc-bb93-b00e86eff867.png)
 
@@ -20,7 +20,7 @@ Available properties for the control
 
 ![enter image description here](https://user-images.githubusercontent.com/75740551/212083604-bf65ef71-2a56-4646-bca6-8aebf925ba80.png)
 
-# Installation
+## Installation
 
 Easiest way to install this package is inside your TwinCAT HMI Project. 
 **Right click** References and click "Manage NuGet Packages.." then browse for the file and install it! 
