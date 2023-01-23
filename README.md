@@ -20,11 +20,11 @@ Available properties for the control
 
 ![enter image description here](https://user-images.githubusercontent.com/75740551/214013255-e5065a32-b0fd-49ff-9c9a-0f5a658b78cf.png)
 
-UnitModeCurrent: link PLC struct from ST_PMLs
+**UnitModeCurrent:** link PLC struct from ST_PMLs
 
-StateCurrent: link PLC struct from ST_PMLs
+**StateCurrent:** link PLC struct from ST_PMLs
 
-UnitModeConfiguration: (optional) link PLC array from Tc3_PackML_V2.GlobalVariables.stPMLUnitModeConfiguration
+**UnitModeConfiguration:** (optional) link PLC array from Tc3_PackML_V2.GlobalVariables.stPMLUnitModeConfiguration
 
 ## Installation
 
