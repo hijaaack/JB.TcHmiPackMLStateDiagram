@@ -18,7 +18,7 @@ in perpetuity.
 
 Available properties for the control
 
-![enter image description here](https://user-images.githubusercontent.com/75740551/212083604-bf65ef71-2a56-4646-bca6-8aebf925ba80.png)
+![enter image description here](https://user-images.githubusercontent.com/75740551/214013255-e5065a32-b0fd-49ff-9c9a-0f5a658b78cf.png)
 
 ## Installation
 
