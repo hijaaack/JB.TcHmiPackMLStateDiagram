@@ -14,7 +14,7 @@ in perpetuity.
 
 ## JB.TcHmiPackMLStateDiagram for TwinCAT HMI
 
-![enter image description here](https://user-images.githubusercontent.com/75740551/212083574-a0f7f5cb-2941-45bc-bb93-b00e86eff867.png)
+![enter image description here](https://user-images.githubusercontent.com/75740551/214014256-046498d0-2bf5-46ae-a5d5-35043caa9ea4.gif)
 
 Available properties for the control
 
