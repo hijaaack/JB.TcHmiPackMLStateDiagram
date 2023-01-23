@@ -26,7 +26,7 @@
     "alwaysStrict": false
   },
   "include": [
-    "../Packages/Beckhoff.TwinCAT.HMI.Framework.12.758.8/runtimes/native1.12-tchmi/TcHmi.d.ts"    
+    "../Packages/Beckhoff.TwinCAT.HMI.Framework.12.758.8/runtimes/native1.12-tchmi/TcHmi.d.ts"
   ],
   "files": [
     "TcHmiPackMLStateDiagramControl/TcHmiPackMLStateDiagramControl.ts"

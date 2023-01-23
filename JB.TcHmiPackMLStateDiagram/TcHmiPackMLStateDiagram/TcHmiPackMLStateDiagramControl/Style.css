@@ -68,6 +68,24 @@
     fill: #f8f8ff;
 }
 
+/* StateComplete (SC) */
+.packml-text-sc {
+    fill: white;
+}
+
+.packml-rect-sc {
+    fill: black;
+}
+
+/* PackML Command Texts */
+.packml-text-cmd {
+    fill: white;
+}
+
+.packml-rect-cmd {
+    fill: black;
+}
+
 /* Arrows */
 .state-arrow-transition {
     fill: #ced8ea;
