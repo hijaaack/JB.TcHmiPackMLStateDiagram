@@ -5,7 +5,7 @@
 // @ts-nocheck
 module TcHmi {
     export module Controls {
-        export module TcHmiPackMLStateDiagram {          
+        export module TcHmiPackMLStateDiagram {
             export class TcHmiPackMLStateDiagramControl extends TcHmi.Controls.System.TcHmiControl {
 
                 /*
@@ -641,8 +641,6 @@ module TcHmi {
 
                     //Inform the system that the function has a changed result
                     TcHmi.EventProvider.raise(this.__id + ".onFunctionResultChanged", ["getUnitModeConfiguration"]);
-
-                    console.log(convertedValue);
 
                     //Update visibility if data was changed
                     this.processUnitModeCurrent();

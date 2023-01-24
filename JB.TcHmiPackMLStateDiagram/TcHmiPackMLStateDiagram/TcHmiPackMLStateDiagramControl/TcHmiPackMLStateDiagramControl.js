@@ -477,7 +477,6 @@ var TcHmi;
                     this.__unitModeConfig = convertedValue;
                     //Inform the system that the function has a changed result
                     TcHmi.EventProvider.raise(this.__id + ".onFunctionResultChanged", ["getUnitModeConfiguration"]);
-                    console.log(convertedValue);
                     //Update visibility if data was changed
                     this.processUnitModeCurrent();
                 }
